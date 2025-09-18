@@ -14,7 +14,6 @@
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   height: 100vh;
-  width: 100vw;
   line-height: 1.5em;
   background-color: var(--main-background);
   color: var(--text-reverse);
@@ -42,7 +41,6 @@ nav#menu > ul > li > a{
   border-radius: 5px;
   padding: 10px;
   transition: background-color .3s, color .3s;
-  font-size: 1.2em
 }
 nav#menu > ul > li > a:hover{
   background-color: var(--emphasis-reverse);
@@ -53,7 +51,7 @@ main{
   display: grid;
   grid-template-columns: auto 90vw auto;
   gap: 20px;
-  padding: 20px;
+  padding: 20px 0px;
   margin: 20px 0px;
 }
 section#profile{
