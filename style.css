@@ -109,9 +109,27 @@ article > h2{
   color: var(--emphasis);
   margin-bottom: 20px;
 }
-
-
-
+div#skills-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+div.skill-type{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  justify-items: start;
+  align-items: center;
+  row-gap: 10px;
+}
+div.skill-type > div.item{
+  color: var(--text-reverse);
+  font-weight: bold;
+  padding-left: 5px;
+}
+div.skill-type > div.item:hover{
+  text-decoration: underline;
+}
 div#graduation-container{
   display: flex;
   flex-flow: column-reverse nowrap;
