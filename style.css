@@ -116,7 +116,7 @@ div#skills-container{
 }
 div.skill-type{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   justify-items: start;
   align-items: center;
@@ -129,6 +129,7 @@ div.skill-type > div.item{
 }
 div.skill-type > div.item:hover{
   text-decoration: underline;
+  color: var(--emphasis);
 }
 div#graduation-container{
   display: flex;
