@@ -11,6 +11,14 @@
   margin: 0;
   box-sizing: border-box;
 }
+body.dark{
+  --main-background: #222222;
+  --text-reverse: #e0e0e0;
+  --text: #333333;
+  --emphasis: #ff5522;
+  --emphasis-reverse: #a73917;
+  --card-background: #444444;
+}
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   height: 100vh;

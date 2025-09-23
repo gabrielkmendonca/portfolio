@@ -1,29 +1,26 @@
-const botao = document.getElementById('botao-tema');
+const button = document.getElementById('theme-button');
 const body = document.body;
 
-// Persistência do tema
-const temasalvo = localStorage.getItem('tema');
-temaEscuro(temasalvo === 'escuro');
+const savedTheme = localStorage.getItem('theme');
+darkTheme(savedTheme === 'dark');
 
-// Função para alternar entre tema claro e escuro
-function temaEscuro(tipo) {
-  if (tipo == true) {
-    body.classList.add('escuro');
-    botao.innerHTML = '<i class="fa-solid fa-sun"></i>';
+function darkTheme(type) {
+  if (type == true) {
+    body.classList.add('dark');
+    button.innerHTML = '<i class="fa-solid fa-sun"></i>';
   } else {
-    body.classList.remove('escuro');
-    botao.innerHTML = '<i class="fa-solid fa-moon"></i>';
+    body.classList.remove('dark');
+    button.innerHTML = '<i class="fa-solid fa-moon"></i>';
   }
 }
 
-botao.addEventListener('click', () => {
-  const isescuro = body.classList.toggle('escuro');
-  temaEscuro(isescuro);
-  localStorage.setItem('tema', isescuro ? 'escuro' : 'claro');
+button.addEventListener('click', () => {
+  const idark = body.classList.toggle('dark');
+  darkTheme(idark);
+  localStorage.setItem('theme', idark ? 'dark' : 'light');
 });
 
-// Scroll suave para links de navegação
-const navLinks = document.querySelectorAll('#menu ul a.link');
+const navLinks = document.querySelectorAll('#menu ul a');
 navLinks.forEach(link => {
   link.addEventListener('click', function(e) {
     e.preventDefault();
