@@ -2,25 +2,25 @@ const button = document.getElementById('theme-button');
 const body = document.body;
 
 const savedTheme = localStorage.getItem('theme');
-darkTheme(savedTheme === 'dark');
+lightTheme(savedTheme === 'light');
 
-function darkTheme(type) {
+function lightTheme(type) {
   if (type == true) {
-    body.classList.add('dark');
-    button.innerHTML = '<i class="fa-solid fa-sun"></i>';
-  } else {
-    body.classList.remove('dark');
+    body.classList.add('light');
     button.innerHTML = '<i class="fa-solid fa-moon"></i>';
+  } else {
+    body.classList.remove('light');
+    button.innerHTML = '<i class="fa-solid fa-sun"></i>';
   }
 }
 
 button.addEventListener('click', () => {
-  const idark = body.classList.toggle('dark');
-  darkTheme(idark);
-  localStorage.setItem('theme', idark ? 'dark' : 'light');
+  const ilight = body.classList.toggle('light');
+  lightTheme(ilight);
+  localStorage.setItem('theme', ilight ? 'light' : 'dark');
 });
 
-const navLinks = document.querySelectorAll('#menu ul a');
+const navLinks = document.querySelectorAll('#menu ul a.link');
 navLinks.forEach(link => {
   link.addEventListener('click', function(e) {
     e.preventDefault();

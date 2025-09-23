@@ -1,23 +1,23 @@
 :root{
-  --main-background: #f5f5f5;
-  --text: white;
-  --text-reverse: #222;
-  --emphasis: #0F6D31;
-  --emphasis-reverse: #00C647;
-  --card-background: white;
+  --main-background: #161B22;
+  --text-reverse: #EDEDED;
+  --text: #1A1A1A;
+  --emphasis: #3FB950;
+  --emphasis-reverse: #238636;
+  --card-background: #444444;
 }
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-body.dark{
-  --main-background: #222222;
-  --text-reverse: #e0e0e0;
-  --text: #333333;
-  --emphasis: #ff5522;
-  --emphasis-reverse: #a73917;
-  --card-background: #444444;
+body.light{
+  --main-background: #f5f5f5;
+  --text: white;
+  --text-reverse: #222;
+  --emphasis: #1F6FEB;
+  --emphasis-reverse: #58A6FF;
+  --card-background: white;
 }
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -56,7 +56,6 @@ nav#menu > ul > li > a:hover{
   background-color: var(--emphasis-reverse);
   color: var(--text-reverse);
 }
-/* end of header section */
 main{
   display: grid;
   grid-template-columns: auto 90vw auto;
@@ -79,7 +78,7 @@ section#profile > img{
   object-fit: cover;
   overflow: hidden;
   border-radius: 50%;
-  border: 2px solid var(--main-background);
+  border: 3px solid var(--card-background);
   outline: 5px solid var(--emphasis);
   margin: 15px;
 }
@@ -101,7 +100,6 @@ div#social > a:hover{
   font-size: 1.8em;
   color: var(--emphasis-reverse);
 }
-/* end of profile section */
 section#infos{
   grid-column: 2;
 }
@@ -193,7 +191,6 @@ div#courses-container p.institution{
 
 
 
-/* end of infos section */
 @media screen and (min-width: 768px){
   main{
     grid-template-columns: auto 300px 1fr auto;
