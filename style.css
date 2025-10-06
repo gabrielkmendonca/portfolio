@@ -250,13 +250,14 @@ div#courses-container p.institution{
     justify-content: space-between;
   }
   #projects-container > div.project > div.project-info{
-    max-width: 80%;
+    max-width: 55%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
   }
-  #projects-container > div.project > div.photo{
-    aspect-ratio: 1/1;
-    max-width: 20%;
+  #projects-container > div.project > .photo{
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    max-width: 40%;
   }
 }
