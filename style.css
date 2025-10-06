@@ -188,6 +188,9 @@ div#courses-container h3.title{
 div#courses-container p.institution{
   font-size: .9em;
 }
+#projects{
+  margin-bottom: 0px;
+}
 #projects-container{
   display: flex;
   flex-direction: column-reverse;
