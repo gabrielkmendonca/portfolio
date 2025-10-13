@@ -20,7 +20,7 @@ button.addEventListener('click', () => {
   localStorage.setItem('theme', ilight ? 'light' : 'dark');
 });
 
-const navLinks = document.querySelectorAll('#menu ul a.link');
+const navLinks = document.querySelectorAll('nav#menu > ul > li > a.link');
 navLinks.forEach(link => {
   link.addEventListener('click', function(e) {
     e.preventDefault();
