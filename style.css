@@ -21,7 +21,7 @@ body.light{
 }
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  height: 100vh;
+  min-height: 100vh;
   line-height: 1.5em;
   background-color: var(--main-background);
   color: var(--text-reverse);
